@@ -11,4 +11,5 @@ type Movie struct {
 	Release_date      string  `json:"release_date" bson:"release_date"`
 	Poster_path       string  `json:"poster_path" bson:"poster_path"`
 	Vote_average      float32 `json:"vote_average" bson:"vote_average"`
+	Vote_count        int     `json:"vote_count" bson:"vote_count"`
 }
