@@ -9,4 +9,5 @@ import (
 func MovieRoutes(route fiber.Router) {
 	route.Get("/top_rated", handler.GetTopRatedMovies)
 	route.Get("/popular", handler.GetPopularMovies)
+	route.Get("/watched_movies", handler.GetWatchedMovies)
 }
