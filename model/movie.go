@@ -1,8 +1,8 @@
 package model
 
 type Movie struct {
-	ID                int     `json:"id" bson:"id"`
-	Adult             bool    `json:"adult" bson:"adult"`
+	ID                int32   `json:"id" bson:"id"`
+	Adult             bool    `json:"adults" bson:"adult"`
 	Backdrop_path     string  `json:"backdrop_path" bson:"backdrop_path"`
 	Genre_ids         []int16 `json:"genre_ids" bson:"genre_ids"`
 	Original_language string  `json:"original_language" bson:"original_language"`
@@ -12,4 +12,5 @@ type Movie struct {
 	Poster_path       string  `json:"poster_path" bson:"poster_path"`
 	Vote_average      float32 `json:"vote_average" bson:"vote_average"`
 	Vote_count        int     `json:"vote_count" bson:"vote_count"`
+	Is_watched        bool    `json:"is_watched" bson:"is_Watched"`
 }

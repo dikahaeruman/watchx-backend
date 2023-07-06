@@ -19,7 +19,7 @@ func SetupRoutes(app *fiber.App) {
 		return c.Status(fiber.StatusOK).JSON(fiber.Map{
 			"success":     true,
 			"message":     "You are at the root endpoint 😉",
-			"github_repo": "to be added later",
+			"github_repo": "https://github.com/vanestorz/watchx-backend",
 		})
 	})
 
@@ -29,6 +29,7 @@ func SetupRoutes(app *fiber.App) {
 
 	routes.AccountRoutes((api.Group("/accounts")))
 	routes.MovieRoutes((api.Group("/movies")))
+	routes.AuthRoutes((api.Group("/auth")))
 }
 
 func main() {
